@@ -45,7 +45,7 @@ Here attention_input_encoder is W1 and attention_prev_state is W2.
 
 ### Training
 
-One of the biggest questions during hyperparameter optmization was whether to use Teacher-Forcing . Teacher-Forcing is a technique that uses the ground truth label from the previous timestep as input to the decoder for the current timestep. While Teacher-Forcing is known to speed up convergence it also causes model instability during inference. A couple of techniques have been proposed in literature to tackle this issue : 1)[Professor Forcing](https://arxiv.org/abs/1610.09038) and 2)[Scheduled Sampling](Scheduled Sampling for Sequence Prediction with Recurrent Neural Networks).
+One of the biggest questions during hyperparameter optmization was whether to use Teacher-Forcing . Teacher-Forcing is a technique that uses the ground truth label from the previous timestep as input to the decoder for the current timestep. While Teacher-Forcing is known to speed up convergence it also causes model instability during inference. A couple of techniques have been proposed in literature to tackle this issue : 1)[Professor Forcing](https://arxiv.org/abs/1610.09038) and 2)[Scheduled Sampling](https://arxiv.org/abs/1506.03099).
 
 In this project, I choose the latter aprroach given it's similarity to the Epsilon-greedy solution for the Exploration and Exploitation problem in Reinforcement Learning. During the early iterations of training, when the decoder is still learning, teacher forcing is optimal. But as the decoder learns with every epoch, the probability of the network to use teacher-forcing is constantly reduced so as to encourage the Network to learn from it's own mistakes. 
 
