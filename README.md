@@ -6,3 +6,4 @@ Follow the links to read more about the corresponding projects
 * [Machine Translation using Bahdanau Attention](https://github.com/bhargavsaidasari/Machine-Learning-Projects/tree/master/English-Hindi-Translation)
 * [Deep Convolutional GAN to generate Faces](https://github.com/bhargavsaidasari/Machine-Learning-Projects/tree/master/DCGAN)
 * [Text Generation using LSTM](https://github.com/bhargavsaidasari/Machine-Learning-Projects/tree/master/Seinfeld-Text-Generation)
+* [Emergency Vehicle Detection](https://github.com/bhargavsaidasari/Machine-Learning-Projects/tree/master/Emergency-Vehicle-Detection)
